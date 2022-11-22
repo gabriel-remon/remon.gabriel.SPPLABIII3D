@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="stylesheet" href="./css/mascotas.css">
+    <link rel="stylesheet" href="./css/dibujos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <a href="#">
+                <img id="logo" src="./imagenes/logo.png" alt="logo de la empresa">
+            </a>
+            <nav>
+                <a href="./index.html">Nosotros</a>
+                <a href="#">anuncios</a>
+                <a href="#">blog</a>
+                <a href="#">contactos</a>
+            </nav>
+        </div>
+        <div class="descripcion">
+            <p>Venta y adopcion de mascotas</p>
+        </div>
+    </header>
+    <main>
+
+        <p id="inicio">Mascotas en Venta y Adopcion</p>
+
+        <div class="row blue">
+            <div class="col-6">
+                <label for="tipo">Filtrar animales</label>
+                <select id="tipo">
+                    <option value="todo">Todo</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">gato</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="promedio">Promedio</label>
+                <input id="promedio" type="text" readonly >
+            </div>
+
+        </div>
+
+
+        <div class="col">
+            <label for="titulo">TITULO:</label>
+            <input id="titulo" type="checkbox" name="titulo" checked>
+
+            <label for="tipo">TIPO:</label>
+            <input id="tipo" type="checkbox" name="tipo" checked>
+
+            <label for="descripcion">DESCRIPCCION:</label>
+            <input id="descripcion" type="checkbox" name="descripcion" checked>
+
+            <label for="precio">PRECIO:</label>
+            <input id="precio" type="checkbox" name="precio" checked>
+
+            <label for="raza">RAZA:</label>
+            <input id="raza" type="checkbox" name="raza" checked>
+
+            <label for="edad">EDAD:</label>
+            <input id="edad" type="checkbox" name="edad" checked>
+
+            <label for="vacunado">VACUNADO:</label>
+            <input id="vacunado" type="checkbox" name="vacunado" checked>
+        </div>
+
+        <article id="tabla" class="contenedor">
+            <strong id="sin-anuncios">No se encontraron anuncios</strong>
+        </article>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="./index.html">Nosotros</a>
+            <a href="#">anuncios</a>
+            <a href="#">blog</a>
+            <a href="#">contactos</a>
+        </nav>
+        <p>Todos los derechos reservados 2019</p>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./JS/app2.js" type="module"></script>
+</body>
+
+</html>

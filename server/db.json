@@ -1,0 +1,74 @@
+{
+  "mascotas": [
+    {
+      "id": 1,
+      "titulo": "venta animal",
+      "animal": "gato",
+      "descripcion": "muy lindo",
+      "precio": "12312",
+      "raza": "Latin American Indian",
+      "edad": "2022-07-07",
+      "vacunado": "Si"
+    },
+    {
+      "id": 7,
+      "titulo": "venta animal",
+      "animal": "gato",
+      "descripcion": "muy lindo",
+      "precio": 42,
+      "raza": "Laotian",
+      "edad": "2020-07-02",
+      "vacunado": "No"
+    },
+    {
+      "id": 13,
+      "titulo": "venta animal",
+      "animal": "gato",
+      "descripcion": "muy lindo",
+      "precio": 40,
+      "raza": "Colombian",
+      "edad": "2020-05-20",
+      "vacunado": "Si"
+    },
+    {
+      "id": 14,
+      "titulo": "venta animal",
+      "animal": "gato",
+      "descripcion": "muy lindo weqweqwe",
+      "precio": "35",
+      "raza": "Creek",
+      "edad": "2020-01-01",
+      "vacunado": "Si"
+    },
+    {
+      "id": 15,
+      "titulo": "venta animal",
+      "animal": "perro",
+      "descripcion": "muy lindo",
+      "precio": 14,
+      "raza": "Hmong",
+      "edad": "2021-05-18",
+      "vacunado": "No"
+    },
+    {
+      "id": 16,
+      "titulo": "we",
+      "animal": "perro",
+      "descripcion": "qwe",
+      "precio": "321",
+      "raza": "sweq",
+      "edad": "2022-11-03",
+      "vacunado": "Si"
+    },
+    {
+      "id": 17,
+      "titulo": "venta animal",
+      "animal": "perro",
+      "descripcion": "muy lindo",
+      "precio": "73",
+      "raza": "Tohono O'Odham",
+      "edad": "2022-05-05",
+      "vacunado": "Si"
+    }
+  ]
+}

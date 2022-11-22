@@ -1,0 +1,32 @@
+.tabla{
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.fila{
+   background: white;
+}
+.cabecera{
+    background: rgb(57, 72, 160);
+   
+}
+th ,td{
+    border: 1px solid black;
+    max-width: 650px;
+    min-width: 80px;
+
+}
+.spinner{
+    width: 67px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

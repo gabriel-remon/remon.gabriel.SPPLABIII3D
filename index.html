@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dibujos.css">
+    <link rel="stylesheet" href="./css/validaciones.css">
+    <!-- Bootstrap CSS -->
+   
+
+    <title>Primer parcial laboratorio III</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img id="logo" src="./imagenes/logo.png" alt="logo de la empresa">
+          </a>
+          <nav >
+            <a href="#">Nosotros</a>
+            <a href="./tabla.html">anuncios</a>
+            <a href="#">blog</a>
+            <a href="#">contactos</a>
+          </nav>
+    </header>
+    
+    <main>
+
+        <p>Administracion</p>
+        <img id="autos" src="./imagenes/animales.jpg" alt="">
+        <div class="contenedor">
+    
+          <form>
+            <fieldset>
+              <legend>informacion del anuncio</legend>
+    
+              <label for="titulo">TITULO:</label>
+              <input id="titulo" type="text" name="titulo" placeholder="Titulo">
+              <span></span>
+
+              <label for="descripccion">DESCRIPCCION:</label>
+              <input id="descripccion" name="descripccion" type="text" placeholder="Descripccion">
+              <span></span>
+    
+              <label>ANIMAL:</label>
+              <div class="contenedor">
+                <label for="perro">PERRO:</label>
+                <input id="perro" type="radio" name="animal" value="perro" checked>
+                <label for="gato">GATO:</label>
+                <input id="gato" type="radio" name="animal" value="gato">
+              </div>
+    
+    
+              <label for="precio">PRECIO:</label>
+              <input id="precio" name="precio" type="text" placeholder="Precio">
+              <span></span>
+    
+              <div class="especificaciones">
+                <label for="raza">
+                  <img src="./imagenes/raza.png" alt="dibujo de animal">
+                </label>
+                <input id="raza" name="raza" type="text" placeholder="raza">
+                <span></span>
+    
+                <label for="edad">
+                  <img src="./imagenes/fecha.png" alt="dibujo de animal">
+                </label>
+                <input id="edad" name="edad" type="date" placeholder="dd/mm/aaaa">
+                <span></span>
+    
+                <label for="vacunado">
+                  <img src="./imagenes/jeringa.png" alt="dibujo de jeringa">
+                </label>
+
+                <select name="vacunado">
+                    <option value="Si">SI</option>
+                    <option value="No">NO</option>
+                  </select>
+                <span></span>
+              </div>
+            </fieldset>
+            <button class="contenedor"> <img src="./imagenes/guardar.png" alt=""> Guardar</button>
+            <button id="modificar" class="contenedor ocultar">  Modificar</button>
+            <button id="Eleiminar" class="contenedor ocultar">  Eliminar</button>
+          </form>
+        </div>
+    
+        <article id="tabla" class="contenedor">
+          <strong id="sin-anuncios">No se encontraron anuncios</strong>
+        </article>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Nosotros</a>
+            <a href="./tabla.html">anuncios</a>
+            <a href="#">blog</a>
+            <a href="#">contactos</a>
+          </nav>
+        <p>Todos los derechos reservados 2019</p>
+        
+    </footer>
+
+    
+    <script src="./js/app.js" type="module"></script>
+    
+</body>
+</html>
