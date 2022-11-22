@@ -36,7 +36,6 @@ $checks.forEach(e=>e.addEventListener("change",actualizar2));
 function actualizar2(){
     $listaFiltrada = $lista.map((elemento,i)=>
     {
-        console.log($checks[1]);
         let item = {id:elemento.id}
         if($checks[1].checked) item.titulo=elemento.titulo;
         if($checks[2].checked) item.animal=elemento.animal;
@@ -48,8 +47,16 @@ function actualizar2(){
         return item;
     })
     limpiarHijos();
-
-    $divTabla.appendChild(CrearTabla($listaFiltrada));
+    if(Object.values($listaFiltrada[0]) ==1)
+    {
+        const sin = document.createElement("p");
+        sin.textContent = "No se encontraron anuncios"
+        $divTabla.appendChild(sin);
+    }
+    else
+    {
+        $divTabla.appendChild(CrearTabla($listaFiltrada));
+    }
 }
 
 function promedio(condicion){
