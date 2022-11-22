@@ -103,19 +103,50 @@ export class Anuncio_mascota extends Anuncio {
         return JSON.parse(localStorage.getItem("mascotas"));
     }
 
-    static getServer(respuesta, espera) {
-        const xhr = new XMLHttpRequest();
-        envioPeticion(xhr, respuesta, espera);
-        xhr.open("GET", URL);
-        xhr.send();
+    static async getServer(respuesta, espera,limpiar) {
+        try
+        {
+            limpiar();
+            espera();
+            const res = await fetch(URL);
+            if(!res.ok)
+            {
+                throw new Error("codio de error " + res.status + ": " + res.statusText);
+            }
+            const data = await res.json();
+            limpiar();
+            respuesta(data);
+        }
+        catch(err)
+        {
+            alert(err.message);
+        }
     }
 
-    static deleteIdServer(id,espera,respuesta){
-        const xhr = new XMLHttpRequest();
-        envioPeticion(xhr, respuesta, espera);
-        xhr.open("DELETE", URL+"/"+id);
-        xhr.send();
+    static async deleteIdServer(id,espera,limpiar,respuesta){
+        try
+        {
+            limpiar();
+            espera();
+            const metodo ={
+                method:"DELETE",
+            };
+            const res = await fetch(URL+"/"+id,metodo);
+            if(!res.ok)
+            {
+                throw new Error("codio de error " + res.status + ": " + res.statusText);
+            }
+            const data = await res.json();
+            limpiar();
+            respuesta(data);
+        }
+        catch(err)
+        {
+            alert(err.message);
+        }
+        
     }
+
     updateIdServer(espera,respuesta){
         const xhr = new XMLHttpRequest();
         envioPeticion(xhr, respuesta, espera);

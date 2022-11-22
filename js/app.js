@@ -11,9 +11,9 @@ let idSeleccionado =null;
 
 
 function actualizar(){
-    limpiarHijos();
+
     Anuncio_mascota.getServer((data)=>{
-        limpiarHijos();
+
         if(data.length ==0)
         {
             const sin = document.createElement("p");
@@ -26,7 +26,7 @@ function actualizar(){
         }
     },()=>{
         $divTabla.appendChild(spinner("./imagenes/spinner.gif"));
-    })
+    },limpiarHijos)
 }
 
 actualizar();
@@ -128,26 +128,11 @@ $eliminar.addEventListener("click",(e)=>{
     {
         console.log(idSeleccionado);
         limpiarHijos();
-        Anuncio_mascota.deleteIdServer(idSeleccionado,()=>$divTabla.appendChild(spinner("./imagenes/spinner.gif")));
+        Anuncio_mascota.deleteIdServer(idSeleccionado,()=>$divTabla.appendChild(spinner("./imagenes/spinner.gif")),limpiarHijos,(data)=>console.log(data));
         $eliminar.classList.remove("mostrar");
         $modificar.classList.remove("mostrar");
         //actualizar();
     }
 });
 
-$modificar.addEventListener("submit",(e)=>{
-    if(idSeleccionado!=null)
-    {
-        //console.log(e);
-        //const {titulo,animal,descripccion,precio,raza,edad,vacunado} = e.target;
-    
-       // const mascota = new Anuncio_mascota(idSeleccionado,titulo.value,animal.value,descripccion.value,precio.value,raza.value,edad.value,vacunado.value);
-       // limpiarCampos($form.children);
-       // mascota.updateIdServer();
-        //const {titulo,transaccion,descripccion,precio,cantBaños,cantAutos,cantDormitorios} = $form.children;
-        //const propiedad = new Propiedad(idSeleccionado,titulo.value,transaccion.value,descripccion.value,precio.value,cantBaños.value,cantAutos.value,cantDormitorios.value);
-    
-        
-        //actualizar();
-    }
-});
+

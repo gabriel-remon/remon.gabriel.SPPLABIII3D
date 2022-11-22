@@ -16,12 +16,11 @@ function actualizar(){
         data.forEach(element => {
             $lista.push(element);
         });
-        limpiarHijos();
         $divTabla.appendChild(CrearTabla(data));
         $inputPromedio.value = promedio();
     },()=>{
         $divTabla.appendChild(spinner("./imagenes/spinner.gif"));
-    })
+    },limpiarHijos)
 }
 
 actualizar();
@@ -54,13 +53,16 @@ function actualizar2(){
 }
 
 function promedio(condicion){
+    let total;
     if(condicion== null ||condicion=="todo" )
     {
-       return $lista.reduce((acum,element)=>acum+parseInt(element.precio),0);
+       total= $lista.reduce((acum,element)=>acum+parseFloat(element.precio),0);
+       return total / $lista.length;
     }
     else
     {
-        return $lista.reduce((acum,element)=>element.animal==condicion?acum+parseInt(element.precio):acum,0);
+        total= $lista.reduce((acum,element)=>element.animal==condicion?acum+parseFloat(element.precio):acum,0);
+        return total / $lista.reduce((acum,element)=>element.animal==condicion?acum+1:acum,0)
     }
 }
 

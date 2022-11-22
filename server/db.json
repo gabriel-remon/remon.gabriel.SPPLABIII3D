@@ -1,74 +1,138 @@
 {
-  "mascotas": [
-    {
-      "id": 1,
-      "titulo": "venta animal",
-      "animal": "gato",
-      "descripcion": "muy lindo",
-      "precio": "12312",
-      "raza": "Latin American Indian",
-      "edad": "2022-07-07",
-      "vacunado": "Si"
-    },
-    {
-      "id": 7,
-      "titulo": "venta animal",
-      "animal": "gato",
-      "descripcion": "muy lindo",
-      "precio": 42,
-      "raza": "Laotian",
-      "edad": "2020-07-02",
-      "vacunado": "No"
-    },
-    {
-      "id": 13,
-      "titulo": "venta animal",
-      "animal": "gato",
-      "descripcion": "muy lindo",
-      "precio": 40,
-      "raza": "Colombian",
-      "edad": "2020-05-20",
-      "vacunado": "Si"
-    },
-    {
-      "id": 14,
-      "titulo": "venta animal",
-      "animal": "gato",
-      "descripcion": "muy lindo weqweqwe",
-      "precio": "35",
-      "raza": "Creek",
-      "edad": "2020-01-01",
-      "vacunado": "Si"
-    },
-    {
-      "id": 15,
-      "titulo": "venta animal",
-      "animal": "perro",
-      "descripcion": "muy lindo",
-      "precio": 14,
-      "raza": "Hmong",
-      "edad": "2021-05-18",
-      "vacunado": "No"
-    },
-    {
-      "id": 16,
-      "titulo": "we",
-      "animal": "perro",
-      "descripcion": "qwe",
-      "precio": "321",
-      "raza": "sweq",
-      "edad": "2022-11-03",
-      "vacunado": "Si"
-    },
-    {
-      "id": 17,
-      "titulo": "venta animal",
-      "animal": "perro",
-      "descripcion": "muy lindo",
-      "precio": "73",
-      "raza": "Tohono O'Odham",
-      "edad": "2022-05-05",
-      "vacunado": "Si"
-    }
-  ]
+  "mascotas": [{
+    "id": 1,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 50,
+    "raza": "Salvadoran",
+    "edad": "2022-07-31",
+    "vacunado": "Si"
+  }, {
+    "id": 2,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 89,
+    "raza": "Samoan",
+    "edad": "2020-01-03",
+    "vacunado": "Si"
+  }, {
+    "id": 3,
+    "titulo": "venta animal",
+    "animal": "gato",
+    "descripcion": "muy lindo",
+    "precio": 21,
+    "raza": "Creek",
+    "edad": "2020-12-03",
+    "vacunado": "Si"
+  }, {
+    "id": 4,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 44,
+    "raza": "Yaqui",
+    "edad": "2020-08-17",
+    "vacunado": "No"
+  }, {
+    "id": 5,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 65,
+    "raza": "Chilean",
+    "edad": "2022-01-29",
+    "vacunado": "No"
+  }, {
+    "id": 6,
+    "titulo": "venta animal",
+    "animal": "gato",
+    "descripcion": "muy lindo",
+    "precio": 29,
+    "raza": "Menominee",
+    "edad": "2020-06-12",
+    "vacunado": "Si"
+  }, {
+    "id": 7,
+    "titulo": "venta animal",
+    "animal": "gato",
+    "descripcion": "muy lindo",
+    "precio": 50,
+    "raza": "Guamanian",
+    "edad": "2019-05-03",
+    "vacunado": "Si"
+  }, {
+    "id": 8,
+    "titulo": "venta animal",
+    "animal": "gato",
+    "descripcion": "muy lindo",
+    "precio": 45,
+    "raza": "Shoshone",
+    "edad": "2022-08-03",
+    "vacunado": "No"
+  }, {
+    "id": 9,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 80,
+    "raza": "Tongan",
+    "edad": "2021-05-27",
+    "vacunado": "Si"
+  }, {
+    "id": 10,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 25,
+    "raza": "Ottawa",
+    "edad": "2021-07-31",
+    "vacunado": "Si"
+  }, {
+    "id": 11,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 70,
+    "raza": "Malaysian",
+    "edad": "2022-10-26",
+    "vacunado": "Si"
+  }, {
+    "id": 12,
+    "titulo": "venta animal",
+    "animal": "gato",
+    "descripcion": "muy lindo",
+    "precio": 77,
+    "raza": "Central American",
+    "edad": "2022-07-05",
+    "vacunado": "Si"
+  }, {
+    "id": 13,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 2,
+    "raza": "Mexican",
+    "edad": "2019-02-08",
+    "vacunado": "Si"
+  }, {
+    "id": 14,
+    "titulo": "venta animal",
+    "animal": "gato",
+    "descripcion": "muy lindo",
+    "precio": 66,
+    "raza": "Menominee",
+    "edad": "2021-09-28",
+    "vacunado": "Si"
+  }, {
+    "id": 15,
+    "titulo": "venta animal",
+    "animal": "perro",
+    "descripcion": "muy lindo",
+    "precio": 67,
+    "raza": "Asian Indian",
+    "edad": "2020-11-18",
+    "vacunado": "No"
+  }]
 }
